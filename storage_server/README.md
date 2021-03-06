@@ -1,14 +1,14 @@
 # Storage Server.
 
-Based on a service that is running in production, rewritten in Elixir.
+Based on a production service, rewritten in Elixir.
 
 Uploads, serves and stores firmware for different device models over a range of customers.
 
 ## How to start.
 Requires [Elixir](https://elixir-lang.org/install.html).
 ```
-> mix deps.get
-> iex -S mix
+$ mix deps.get
+$ iex -S mix
 ```
 
 ## Original.
