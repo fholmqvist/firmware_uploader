@@ -20,7 +20,7 @@ $ iex -S mix
 ```
 
 ## How to run client.
-Requires [Erlang](https://www.erlang.org/downloads).
+Requires [Erlang](https://www.erlang.org/downloads).  
 Server must be running.
 ```
 $ escript firmware_uploader.erl
