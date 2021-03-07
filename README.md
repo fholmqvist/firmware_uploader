@@ -1,4 +1,6 @@
-# Storage Server and Client.
+# Firmware Storage, server and client.
+
+For uploading and storing compressed firmware binaries in ETS. Based on a production service, rewritten in Elixir and Erlang.
 
 ## Server - Storage.
 Based on a service that is running in production, rewritten in Elixir.  
