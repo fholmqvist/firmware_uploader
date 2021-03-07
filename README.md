@@ -4,7 +4,7 @@
 Based on a service that is running in production, rewritten in Elixir.  
 
 ## Client - FirmwareUploader.
-Based on a utility tool for above server, originally called by cron job daily to aggregate new firmware files onto a single server.
+Based on a utility tool for above server, originally called by cron job daily to aggregate new firmware files onto a single server, rewritten in Erlang.
 
 ## How to install.
 ```

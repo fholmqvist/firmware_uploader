@@ -20,11 +20,8 @@
 -export([main/1]).
 
 -define(SERVER, "http://localhost:8007/").
-
 -define(FIRMWARE_POST, "api/firmware/").
-
 -define(GET_CUSTOMER, "api/firmware/for/").
-
 -define(FOLDER, "./example_files/").
 
 main(_args) ->
@@ -38,7 +35,7 @@ main(_args) ->
         io:format("Server responded ok.\n\n"),
         get_firmware_files_in_folder(?FOLDER);
       error ->
-	    io:format("Could not connect to server.\nAborting.\n"), error
+        io:format("Could not connect to server.\nAborting.\n"), error
     end.
 
 ping_server() ->
