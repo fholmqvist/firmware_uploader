@@ -8,6 +8,16 @@ defmodule Storage.Router do
   plug(:match)
   plug(:dispatch)
 
+  # There isn't enough code in here to justify a separation
+  # of concern just yet, but if this file gets expanded the
+  # logic for what happens on each route should be broken
+  # out to a dedicated service.
+
+  # This would help readability and maintainability as
+  # each file would have more clear and direct responsibilities.
+
+  # For a larger project, it would most likely help to start
+  # with the router and subsequent service(s) already separated.
 
   get "/" do
     send_resp(conn, 200, "")

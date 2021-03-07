@@ -7,6 +7,6 @@ defmodule Storage.Application do
       Storage.FirmwareCache
     ]
 
-    Supervisor.start_link(children, [strategy: :one_for_all, name: Storage.Supervisor])
+    Supervisor.start_link(children, [strategy: :one_for_one, name: Storage.Supervisor])
   end
 end

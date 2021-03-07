@@ -81,6 +81,4 @@ defmodule Storage.FirmwareCache do
     ]
     :ets.insert(table, {"another", anothers})
   end
-
-
 end

@@ -6,11 +6,16 @@
 %%  to upload new firmwares to later be automatically
 %%  downloaded and installed by remote devices the morning after.
 %%
+%%  Program preemptively terminates if any step fails or isn't needed.
+%%
 %%  1. Ping server.
 %%  2. Get firmware files from folder.
-%%  3. Find set of customers from files.
-%%  4. Fetch existing firmwares for provided customers.
-%%  5. Upload firmwares that aren't already present.
+%%  3. Determine the set of customers from files.
+%%  4. Fetch existing firmwares for provided 
+%%     customers from server.
+%%  5. Determine the set of new firmwares by 
+%%     diffing files with server response.
+%%  6. Upload firmwares that aren't already present.
 %%
 %% @end
 %%%-------------------------------------------------------------------
