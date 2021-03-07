@@ -1,6 +1,7 @@
 defmodule Storage.Firmware do
   def customer_from_filename(filename) do
     filename
+    |> String.replace(".zip", "")
     |> String.split("_")
     |> List.first()
   end
