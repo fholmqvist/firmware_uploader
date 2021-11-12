@@ -1,12 +1,11 @@
 # Firmware Storage, server and client.
-
-For uploading and storing compressed firmware binaries in ETS. Based on a production service, rewritten in Erlang and Elixir.
+Based on a service for uploading and storing compressed firmware binaries the cloud. Rewritten in Erlang and Elixir.
 
 ## Server - Storage.
-Based on a service that is running in production, rewritten in Elixir.  
+ETS store via REST API.
 
 ## Client - FirmwareUploader.
-Originally called by cron job daily to aggregate new firmware files onto a single server, rewritten in Erlang.
+Firmware aggregator service normally run by a cron job, uploads firmwares to server.
 
 ## How to install.
 ```
